@@ -20,3 +20,6 @@
     (is (= 2  (count (pd/player-decision :player4 "cooperate"))))
     (is (= 2  (count (pd/player-decision :player5 "cooperate"))))))
 
+(deftest cooperate-test
+  (testing "should cooperate for :player"
+    (is (= {:player1 "cooperate"} (pd/cooperate :player1)))))

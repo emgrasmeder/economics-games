@@ -10,3 +10,5 @@
     (swap! game assoc player decision)
     @game))
 
+(defn cooperate [player]
+  (player-decision player "cooperate"))
