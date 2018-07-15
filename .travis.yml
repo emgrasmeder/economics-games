@@ -1,1 +1,3 @@
-lein test
+language: clojure
+lein: lein
+script: lein test
